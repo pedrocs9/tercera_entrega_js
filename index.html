@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <header>
+        <nav class="navbar navbar-light bg-dark">
+            <div class="container-fluid">
+                <p class="titulo-nav">PCS STORE</>
+                <div class="d-flex">
+                    <ul>
+                        <li class="submenu">
+                            <div class="fondo-carrito">
+                                <img src="img/carrito2.png" width="40" id="img-carrito">
+                            </div>
+                            
+    
+                            <div id="carrito">
+                                <h2>Carrito de Compras</h2>
+                                <div class="tabla-carrito">
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th class="header">Producto</th>
+                                                <th class="header">Nombre</th>
+                                                <th class="header">Precio</th>
+                                                <th class="header">Cantidad</th>
+                                                <th class="header"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody> <!-- va a ser muy importante-->
+                                    </table>
+                                </div>
+                                <div class="btn-carrito">
+                                    <button id="vaciar-carrito" style="display: none" class="">Vaciar Carrito</>
+                                    <button id="finalizar-compra">Finalizar Compra</button>
+
+                                </div>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+   </header>
+   <main>
+     
+        <!-- CARROUSEl -->
+        <section >
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+            
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/carrousel-one.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3 class="tituloCarrousel">Somos Pioneros en Hardware de Alto Rendimiento</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carrousel-two.jpg" alt="Chicago" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3 class="tituloCarrousel">Ultima Novedad en Componentes</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carrousel-three.jpg" alt="New York" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3 class="tituloCarrousel">Lo mejor para tu Setup Soñado!</h3>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section class="section-productos">
+            <div class="section-prod">
+                <h2>PRODUCTOS</h2>
+            </div>
+            <div id="productos">
+
+            </div>
+        </section>
+        
+            
+   </main>
+   <footer>
+
+   </footer>
+    <!-- <div id="app">
+        
+    </div> -->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
